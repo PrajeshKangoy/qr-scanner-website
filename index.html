@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner or Reader</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f3cd98c778.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>QR-Code Scanner</h1>
+        <form action="#">
+            <input type="file" hidden>
+            <img src="" height="173px" width="173px" alt="qr-code">
+            <div class="content">
+                <i class="fas fa-cloud-upload"></i>
+                <p>Upload QR Code to Scan</p>
+            </div>
+        </form>
+        <div class="details">
+            <textarea disabled></textarea>
+            <!-- A disabled text area is unusable and the text is not selectable (cannot be copied).
+                 The disabled attribute can be set to keep a user from using the text area until some other condition has been met (like selecting a checkbox, etc.).
+                 Then, a JavaScript could remove the disabled value, and make the text area usable. -->
+            <div class="buttons">
+                <button class="close">Close</button>
+                <button class="copy">Copy Text</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
